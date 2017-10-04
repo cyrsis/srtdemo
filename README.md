@@ -1,3 +1,5 @@
+npm install react-native-orientation --save
+
 Installing create-react-native-app globally as below removes the warnings.
 
 npm install -g create-react-native-app

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native'
 
-export default class MainScreen extends Component {
+export default class ChartTwo extends Component {
     static navigationOptions = {
-        title: 'Chart 1',
+        title: 'Chart 2',
     };
 
     constructor(props) {

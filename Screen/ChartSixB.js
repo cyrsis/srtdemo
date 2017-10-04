@@ -513,8 +513,16 @@ export default class ChartSixB extends Component {
                     style={{height: 300, width: 300}}
                 />
 
-                <View style={{width: 150, height: 100, backgroundColor: 'steelblue', position:'absolute', left:0, bottom:0, padding:10}} >
-                    <Button title={"Chart 1"} onPress={this._handlePressGoHome}/>
+                <View style={{
+                    width: 150,
+                    height: 100,
+                    backgroundColor: 'steelblue',
+                    position: 'absolute',
+                    left: 0,
+                    bottom: 0,
+                    padding: 10
+                }}>
+                    <Button textStyle={{color: '#595DB'}} title={"Chart 1"} onPress={this._handlePressGoHome}/>
                 </View>
 
             </View>

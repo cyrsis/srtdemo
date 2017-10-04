@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {View, Text, StyleSheet, Image} from 'react-native'
 
 export default class MainScreen extends Component {
     constructor(props) {
@@ -513,5 +514,14 @@ export default class MainScreen extends Component {
         );
     }
 }
+const styles = StyleSheet.create({
+    paragraph: {
+        margin: 24,
+        fontSize: 18,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        color: '#34495e',
+    },
+});
 
 

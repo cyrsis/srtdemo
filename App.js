@@ -1,25 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image , Button } from 'react-native';
 import { StackNavigator } from 'react-navigation';
+import MainScreen from  './Screen/MainScreen'
 
-class HomeScreen extends React.Component {
-    static navigationOptions = {
-        title: 'Welcome'
-    };
 
-    render() {
-        const { navigate } = this.props.navigation;
-        return(
-        <View>
-            <Text>Hello, Navigation!</Text>
-            <Button
-                onPress={() => navigate('Chat')}
-                title="Chat with Lucy"
-            />
-        </View>
-        )
-    }
-}
 
 class ChatScreen extends React.Component {
     static navigationOptions = {
@@ -35,7 +19,7 @@ class ChatScreen extends React.Component {
 }
 
 const SimpleApp = StackNavigator({
-    Home: {screen: HomeScreen},
+    Home: {screen: MainScreen},
     Chat: {screen: ChatScreen},
 });
 export default class App extends React.Component {
@@ -46,7 +30,9 @@ export default class App extends React.Component {
     }
 
     _handlePress = () => {
-        this.props.navigation.navigate('Home');
+        // this.props.navigation.navigate('Home');
+        this.props.navigation.navigate('Chat')
+
     };
 
 }

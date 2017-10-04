@@ -29,11 +29,7 @@ export default class App extends React.Component {
         );
     }
 
-    _handlePress = () => {
-        // this.props.navigation.navigate('Home');
-        this.props.navigation.navigate('Chat')
 
-    };
 
 }
 

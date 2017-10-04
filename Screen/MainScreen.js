@@ -513,6 +513,12 @@ export default class MainScreen extends Component {
 
         );
     }
+    _handlePress = () => {
+        // this.props.navigation.navigate('Home');
+         this.props.navigation.navigate('Chat')
+        // console.warn("Something happen")
+
+    };
 }
 const styles = StyleSheet.create({
     paragraph: {

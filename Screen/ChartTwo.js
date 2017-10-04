@@ -509,8 +509,8 @@ export default class ChartTwo extends Component {
 
 
                 <Image
-                    source={{uri: 'https://i.imgur.com/wivXKhX.png'}}
-                    style={{height: 300, width: 600}}
+                    source={{uri: 'https://i.imgur.com/dZQFvve.png'}}
+                    style={{height: 300, width: 500}}
                 />
 
             </View>

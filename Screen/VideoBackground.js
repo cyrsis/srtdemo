@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {View, Text, StyleSheet, Image, Button} from 'react-native'
 
-export default class ChartSixB extends Component {
+export default class VideoBackground extends Component {
     static navigationOptions = {
-        title: 'Chart 6B',
+        title: 'VideoBackground',
     };
 
     constructor(props) {
@@ -521,7 +521,7 @@ export default class ChartSixB extends Component {
                     bottom: 0,
                     padding: 10
                 }}>
-
+                    
                     <Button textStyle={{color: '#595DB'}} title={"Chart 1"} onPress={this._handlePressGoHome}/>
                 </View>
 

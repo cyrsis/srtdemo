@@ -463,7 +463,7 @@ export default class MainScreen extends Component {
                             transform: [
                                 {translateX: -210},
                                 {translateY: -240},
-                                {rotateZ: '40deg'},
+                                {rotateZ: '50deg'},
                             ],
                             position: 'absolute',
                             zIndex: 2,
@@ -481,7 +481,7 @@ export default class MainScreen extends Component {
                             transform: [
                                 {translateX: -170},
                                 {translateY: -260},
-                                {rotateZ: '40deg'},
+                                {rotateZ: '60deg'},
                             ],
                             position: 'absolute',
                             zIndex: 2,
@@ -496,20 +496,90 @@ export default class MainScreen extends Component {
                         styles.paragraph,
                         {
                             transform: [
-                                {translateX: -170},
+                                {translateX: -120},
                                 {translateY: -260},
-                                {rotateZ: '40deg'},
+                                {rotateZ: '70deg'},
                             ],
                             position: 'absolute',
                             zIndex: 2,
                         },
                     ]}>
-                    Minerals and Vitamins
+                    Food or Diet, Health and Well-Being
+                </Text>
+
+                <Text
+                    onPress={this._handlePress}
+                    style={[
+                        styles.paragraph,
+                        {
+                            transform: [
+                                {translateX: -80},
+                                {translateY: -240},
+                                {rotateZ: '80deg'},
+                            ],
+                            position: 'absolute',
+                            zIndex: 2,
+                        },
+                    ]}>
+                    Miscellaneous Blocks
+                </Text>
+
+                <Text
+                    onPress={this._handlePress}
+                    style={[
+                        styles.paragraph,
+                        {
+                            transform: [
+                                {translateX: -20},
+                                {translateY: -260},
+                                {rotateZ: '90deg'},
+                            ],
+                            position: 'absolute',
+                            zIndex: 2,
+                        },
+                    ]}>
+                    Programs Created by SPIRIT
+                </Text>
+
+                <Text
+                    onPress={this._handlePress}
+                    style={[
+                        styles.paragraph,
+                        {
+                            transform: [
+                                {translateX: 10},
+                                {translateY: -260},
+                                {rotateZ: '95deg'},
+                            ],
+                            position: 'absolute',
+                            zIndex: 2,
+                        },
+                    ]}>
+                    Soul Energy Programming
+                </Text>
+
+                <Text
+                    onPress={this._handlePress}
+                    style={[
+                        styles.paragraph,
+                        {
+                            transform: [
+                                {translateX: 30},
+                                {translateY: -260},
+                                {rotateZ: '105deg'},
+                            ],
+                            position: 'absolute',
+                            zIndex: 2,
+                        },
+                    ]}>
+                    Spirit Energy Programming
                 </Text>
 
 
+
+
                 <Image
-                    source={{uri: 'https://i.imgur.com/tbip5xU.jpg'}}
+                    source={{uri: 'https://i.imgur.com/NPyjpQO.png'}}
                     style={{height: 700, width: 700}}
                 />
 
@@ -519,7 +589,7 @@ export default class MainScreen extends Component {
     }
     _handlePress = () => {
         // this.props.navigation.navigate('Home');
-         this.props.navigation.navigate('Chat')
+         this.props.navigation.navigate('ChartTwo')
         // console.warn("Something happen")
 
     };

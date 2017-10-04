@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native'
+import {View, Text, StyleSheet, Image, Button} from 'react-native'
 
-export default class ChartTwo extends Component {
+export default class ChartSixB extends Component {
     static navigationOptions = {
-        title: 'Chart 2',
+        title: 'Chart 6B',
     };
 
     constructor(props) {
@@ -509,17 +509,30 @@ export default class ChartTwo extends Component {
 
 
                 <Image
-                    source={{uri: 'https://i.imgur.com/wivXKhX.png'}}
-                    style={{height: 300, width: 600}}
+                    source={{uri: 'https://i.imgur.com/jCo4G7Z.png'}}
+                    style={{height: 300, width: 300}}
                 />
 
+                <View style={{width: 150, height: 100, backgroundColor: 'steelblue', position:'absolute', left:0, bottom:0, padding:10}} >
+                    <Button title={"Chart 1"} onPress={this._handlePressGoHome}/>
+                </View>
+
             </View>
+
+
 
         );
     }
     _handlePress = () => {
         // this.props.navigation.navigate('Home');
-         this.props.navigation.navigate('ChartSixB')
+         this.props.navigation.navigate('Home')
+        // console.warn("Something happen")
+
+    };
+
+    _handlePressGoHome = () => {
+        // this.props.navigation.navigate('Home');
+        this.props.navigation.navigate('Home')
         // console.warn("Something happen")
 
     };
@@ -532,6 +545,16 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         color: '#34495e',
     },
+    leftBottom:{
+        height: 85,
+        flex: 1,
+        backgroundColor: "#FFBB34",
+        borderColor: "#555555",
+        borderWidth: 0,
+        borderRadius: 0,
+        position: 'absolute',
+        bottom:0
+    }
 });
 
 

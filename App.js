@@ -2,25 +2,16 @@ import React from 'react';
 import { StyleSheet, Text, View, Image , Button } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import MainScreen from  './Screen/MainScreen'
+import ChartTwo from './Screen/ChartTwo'
+import ChartSixB from './Screen/ChartSixB'
 
 
 
-class ChatScreen extends React.Component {
-    static navigationOptions = {
-        title: 'Chat with Lucy',
-    };
-    render() {
-        return (
-            <View>
-                <Text>Chat with Lucy</Text>
-            </View>
-        );
-    }
-}
 
 const SimpleApp = StackNavigator({
     Home: {screen: MainScreen},
-    Chat: {screen: ChatScreen},
+    ChartTwo: {screen: ChartTwo},
+    ChartSixB: {screen: ChartSixB}
 });
 export default class App extends React.Component {
     render() {
